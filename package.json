@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/nyxlang/string.git"
   },
   "keywords": [],
   "author": "Jason Barr <jason@jasonsbarr.com>",
@@ -52,6 +52,6 @@
   },
   "dependencies": {
     "@nyxlang/helpers": "^0.0.2",
-    "@nyxlang/string-utils": "^0.0.1"
+    "@nyxlang/string-utils": "^0.0.10"
   }
 }
