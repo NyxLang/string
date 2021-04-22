@@ -11,9 +11,8 @@
     }
   },
   "scripts": {
-    "build": "rm -fr dist/* && npm run build:packages && npm run build:browser",
-    "build:packages": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
-    "build:browser": "parcel build src/index.js --out-file string-utils.js --no-cache",
+    "build": "rm -rf dist/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./scripts/set-package-json.js",
+    "publish-package": "npm run build && npm run docs && git add . && git commit -m 'Publish to NPM' && git push && npm publish",
     "test": "jest",
     "test:all": "jest --all",
     "test:watch": "jest --watch",
@@ -52,6 +51,6 @@
   },
   "dependencies": {
     "@nyxlang/helpers": "^0.0.2",
-    "@nyxlang/string-utils": "^0.0.11"
+    "@nyxlang/string-utils": "^0.0.13"
   }
 }
