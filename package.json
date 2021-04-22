@@ -52,6 +52,6 @@
   },
   "dependencies": {
     "@nyxlang/helpers": "^0.0.2",
-    "@nyxlang/string-utils": "^0.0.10"
+    "@nyxlang/string-utils": "^0.0.11"
   }
 }
